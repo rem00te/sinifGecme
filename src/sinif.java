@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class sinif {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
         int sinif=0;
         int mat = 0, fiz = 0, turk = 0, kim = 0, muz = 0, ortalama;
@@ -10,7 +10,7 @@ public class sinif {
         mat = input.nextInt();
 
         if (mat<0 || mat>=101) {
-            System.out.println("Matematik notu için 0-100 arasında bir not değeri giriniz.");
+            System.out.println("0 -100 arasında bir değer giriniz.");
 
         }
 
@@ -21,7 +21,7 @@ public class sinif {
         }
 
         if (fiz<0 || fiz>= 101) {
-            System.out.println("Fizik notu için 0-100 arasında bir not değeri giriniz.");
+            System.out.println("0 -100 arasında bir değer giriniz.");
         }
 
         else if (fiz>0 && fiz< 101){
@@ -30,7 +30,7 @@ public class sinif {
         }
 
         if (turk<0 || turk>= 101){
-            System.out.println("Türkçe notu için 0-100 arasında bir not değeri giriniz.");
+            System.out.println("0 -100 arasında bir değer giriniz.");
         }
 
         else if (turk>0 && turk< 101) {
@@ -39,14 +39,14 @@ public class sinif {
 
         }
         if (kim<0 || kim>= 101) {
-            System.out.println("Kimya notu için 0-100 arasında bir not değeri giriniz.");
+            System.out.println("0 -100 arasında bir değer giriniz.");
         }
         else if (kim>0 && kim< 101){
             System.out.print("Müzik Ders Notunu Girin : ");
             muz = input.nextInt();
         }
         if  (muz<0 || muz>= 101){
-            System.out.println("Müzik notu için 0-100 arasında bir not değeri giriniz.");
+            System.out.println("0 -100 arasında bir değer giriniz.");
         }
         else if(muz>0 && muz< 101)  {
             ortalama = ((mat + fiz + turk + kim + muz) / 5);
